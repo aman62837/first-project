@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Point</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap counter cdn -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- end google fonts -->
+
+    <!-- bootstrap cdn head -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- end cdn bootstrap -->
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="background-picture">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand fw-bold fs-2 " href="#"><img src="img/ggg.png" class="img-fluid"
+                            style="width: 12rem;"></a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon border-0" style="color: #fff !important;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-family: 'poppins';">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Admission Support : 888-111-6033
+                                    | Toll Free : 888-111-6077</a>
+                            </li>
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row align-items-center pt-5">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="banner-content text-white fw-bold">
+                            <h1 class="title"> LEADING IIT-JEE/NEET PREPARATION INSTITUTE OF KOTA </h1>
+                            <p class="tittle-paragaraph fs-5"> Stand a chance to win up to 90%* scholarship and book
+                                your admission to India's best
+                                coaching program
+                                for all competitive exams.
+                                <br>
+                                <span style="font-size:16px;">*Scholarship on Tution Fee</span>
+                            </p>
+                            <!--<a class="main-btn" href="#pills-tabContent">Discover More</a>-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="banner-thumb text-right" id="Registration">
+                            <div class="text-center border border-light p-5" style="background-color: #001c75;">
+                                <!-- <p class="h4 mb-4" style="color:#fff;">Registrations will starts soon..</p> -->
+
+                                <!-- <p class="h4 mb-4" style="color:#fff;">Registrations Are<br> Still Not Open</p> -->
+                                <p class="h4 mb-4" style="color:#fff;">Registration</p>
+
+                                <form id="otp_form" method="post" onsubmit="return false" autocomplete="off"
+                                    novalidate="novalidate">
+
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <input type="text" id="name" name="name" class="form-control"
+                                                placeholder="Full name">
+                                        </div>
+
+                                    </div>
+                                    <input type="email" id="email" name="email" class="form-control mb-4"
+                                        placeholder="E-mail">
+                                    <input type="hidden" name="utm_source" id="utm_source" value="facebook">
+                                    <input type="hidden" name="utm_medium" id="utm_medium" value="fb_cpc_promotion">
+                                    <input type="hidden" name="utm_campaign" id="utm_campaign"
+                                        value="NSP202425PR_CC_ST010">
+
+                                    <input type="text" id="mobile" name="mobile" class="form-control"
+                                        placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock"
+                                        maxlength="10">
+
+                                    <button class="btn btn-info my-4 btn-block w-100 rounded-0" type="submit"
+                                        id="otp_button">Get
+                                        OTP</button>
+                                    <!-- <p align="justify">If you have attempted the ACST exam before and want to appear again, please <a href="#">click here</a></p> -->
+                                    <!--<a href="re-pay.php">click here</a>-->
+                                    <div id="otp_section" style="display:none;margin-top: 1.5rem;">
+                                        <p class="text-center" style="padding: 10px;color: #FFF;">Enter OTP</p>
+                                        <input type="password" maxlength="6" id="otp" name="otp" class="form-control"
+                                            placeholder="Please Enter OTP"
+                                            aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                                        <button class="btn btn-info my-4 btn-block" type="button"
+                                            id="validate">Validate</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- register form and sign up form -->
+            <section id="features" class="features-area pt-20 ">
+                <div class="container">
+
+                    <div class="row images-group gap-4">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-lg-8 col-md-2">
+                            <div class="features-btn">
+                                <ul class="nav nav-pills d-flex justify-content-between " id="pills-tab" role="tablist">
+
+                                    <li class="nav-item">
+                                        <a style="cursor:default;margin-top: 0px; flex-direction: column; text-align: center;"
+                                            class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2"
+                                            role="tab" aria-controls="pills-2" aria-selected="false">
+                                            <i class="flaticon-computer-graphic device-images"><img src="img/com.png"
+                                                    alt="shape"></i>
+                                            <span>Register</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a style="cursor:default;margin-top: 0px; flex-direction: column; text-align: center;"
+                                            class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5"
+                                            role="tab" aria-controls="pills-5" aria-selected="false">
+                                            <i class="flaticon-app-development device-images"><img
+                                                    src="img/device res.png" alt="shape"></i>
+                                            <span>Take Exam</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2"></div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+            <!-- end sign up form -->
+
+
+            <!-- subject career point -->
+            <div class="container">
+                <div class="row mt-5 pt-5">
+                    <div class="col-lg-12">
+                        <div class="blog-details__main">
+                            <div class="blog-details__image">
+                                <!-- <img src="../images/acst_web_banner.png" alt="thumb"> -->
+                            </div><!-- /.blog-details__image -->
+                            <div class="blog-details__content">
+
+                                <h3> LEADING IIT-JEE/NEET PREPARATION INSTITUTE OF KOTA </h3>
+                                <strong style="color:#f18124; font-size: 25px;">WHAT:</strong>
+                                <p> Career Point Kota to provide the best coaching for IIT-JEE/NEET to passionate and
+                                    hardworking
+                                    students every year. Its aim is to spot and reward the best talent and empower their
+                                    dreams
+                                    with
+                                    scholarships, personalised teaching, microschedule, and research-based study
+                                    material.</p>
+                                <strong style="color:#f18124; font-size: 25px;">WHY:</strong>
+                                <p> It has been our aim since our inception in 1993 to provide all the necessary
+                                    resources
+                                    deserving
+                                    students require to achieve their dreams. Narayana provides scholarships up to 90%
+                                    to
+                                    students through the
+                                    Career Point Kota exam. With scholarships and our NEET and IIT-JEE-expert faculty,
+                                    we provide
+                                    the best
+                                    environment for
+                                    students to excel and accomplish their aspirations. </p>
+                                <strong style="color:#f18124; font-size: 25px;">WHOM:</strong>
+                                <p>
+                                    Career Point Kota is an instant admission and scholarship test for students in
+                                    grades 8-12 who
+                                    are
+                                    passionate about
+                                    excelling in the IIT-JEE, NEET and Olympiads.
+                                </p>
+
+                            </div><!-- /.blog-details__content -->
+
+                        </div><!-- /.blog-details__main -->
+
+                        <!-- first  table-->
+                        <table style="margin-bottom: 2rem;">
+                            <thead class="background-clr-table">
+                                <tr>
+                                    <th>
+                                        Eligibility</th>
+                                    <th> Exam Frequency</th>
+                                    <th>Examination Fee</th>
+
+                                </tr>
+                                <thead>
+                                <tbody class="background-clr-table-1">
+                                    <tr>
+                                        <td>Class VII-X studying Students</td>
+                                        <td>EveryDay</td>
+
+                                        <td>Free</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Class VII-X studying Students</td>
+                                        <td>EveryDay</td>
+
+                                        <td>Free</td>
+
+                                    </tr>
+
+                                </tbody>
+                                <table />
+
+                                <!-- end table first -->
+
+                                <!-- second-table -->
+                                <table>
+                                    <thead class="background-clr-table">
+                                        <tr>
+                                            <th>
+                                                Examination Mode</th>
+                                            <th> Exam Duration</th>
+                                            <th>Exam Time</th>
+
+                                        </tr>
+                                        <thead>
+                                        <tbody class="background-clr-table-1">
+                                            <tr>
+                                                <td>Online</td>
+                                                <td>60 Mins</td>
+
+                                                <td>Exam Time: 10:00 AM TO 7:00 PM
+                                                    Venue: Near by Centers only</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Offline</td>
+                                                <td>60 Mins</td>
+
+                                                <td>Exam Time : 9:00 AM TO 7:00 PM
+                                                    Every Sunday</td>
+
+                                            </tr>
+
+                                        </tbody>
+                                        <table />
+                                        <!-- end table second -->
+
+                                        <blockquote> Responsive Table </blockquote>
+
+                                        <!-- image-table 3-->
+                                        <div class="row align-items-center">
+
+                                            <div class="col-lg-12">
+                                                <div class="about-content">
+                                                    <div class="section-title">
+
+                                                        <h3 class="title"> Exam Pattern</h3>
+                                                    </div>
+                                                    <ul class="nav nav-tabs md-tabs" id="myTabMD" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab-md"
+                                                                data-toggle="tab" href="#home-md" role="tab"
+                                                                aria-controls="home-md"
+                                                                aria-selected="true">Foundation</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab-md" data-toggle="tab"
+                                                                href="#" role="tab" aria-controls="profile-md"
+                                                                aria-selected="false">JEE/NEET</a>
+                                                        </li>
+
+                                                    </ul>
+                                                    <div class="tab-content card pt-5" id="myTabContentMD">
+                                                        <div class="tab-pane fade show active" id="home-md"
+                                                            role="tabpanel" aria-labelledby="home-tab-md">
+                                                            <table class="table table-bordered table-responsive"
+                                                                style="background-color: #fff; border:none;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="100%" colspan="6"> Foundation Exam
+                                                                            Pattern</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <thead
+                                                                    style="background-color: #087fbc; color:#fff; border: 1px solid #dbd9d9;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 600;">
+                                                                            Class</td>
+                                                                        <td
+                                                                            style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 600;">
+                                                                            Subject</td>
+                                                                        <td
+                                                                            style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 600;">
+                                                                            No. of questions</td>
+                                                                        <td
+                                                                            style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 600;">
+                                                                            Total Questions</td>
+                                                                        <td
+                                                                            style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 600;">
+                                                                            Duration</td>
+                                                                        <td
+                                                                            style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 600;">
+                                                                            Total Marks</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody
+                                                                    style="border-color: #dee2e6; font-family: 'poppins';">
+
+                                                                    <tr>
+                                                                        <td rowspan="3">7th moving to 8th</td>
+                                                                        <td>Science</td>
+                                                                        <td>21</td>
+                                                                        <td rowspan="3">35</td>
+                                                                        <td rowspan="3">60 mins</td>
+                                                                        <td rowspan="3">140</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Math</td>
+                                                                        <td>7</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>MAT</td>
+                                                                        <td>7</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td rowspan="3">8th moving to 9th</td>
+                                                                        <td>Science</td>
+                                                                        <td>21</td>
+                                                                        <td rowspan="3">35</td>
+                                                                        <td rowspan="3">60 mins</td>
+                                                                        <td rowspan="3">140</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Math</td>
+                                                                        <td>7</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>MAT</td>
+                                                                        <td>7</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td rowspan="3">9th moving to 10th</td>
+                                                                        <td>Science</td>
+                                                                        <td>21</td>
+                                                                        <td rowspan="3">35</td>
+                                                                        <td rowspan="3">60 mins</td>
+                                                                        <td rowspan="3">140</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Math</td>
+                                                                        <td>7</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>MAT</td>
+                                                                        <td>7</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="100%" colspan="6" rowspan="3">Note:
+                                                                            The exam will consist of only
+                                                                            objective type
+                                                                            questions, each carrying 4 marks and there
+                                                                            will not be any negative marking.
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                                <tbody>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <!-- table-for -->
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="business-content">
+                                                                <div class="section-title">
+                                                                    <h3 class="title">Syllabus</h3>
+
+                                                                </div>
+                                                                <table class="table table-bordered"
+                                                                    style="font-family: 'poppins';">
+                                                                    <thead>
+
+                                                                        <tr>
+                                                                            <td
+                                                                                style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 400;">
+                                                                                <strong>Class</strong>
+                                                                            </td>
+                                                                            <td
+                                                                                style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 400;">
+                                                                                <strong>Subjects</strong>
+                                                                            </td>
+                                                                            <td
+                                                                                style="background-color: #3f6efa; padding: 1rem; color: #ffffff; font-weight: 400;">
+                                                                                <strong>Syllabus</strong>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Class VII-X</td>
+                                                                            <td>Physics, Chemistry, Biology, Mathematics
+                                                                                and MAT</td>
+                                                                            <td>As per the Career Point Kota (Delhi)
+                                                                                paper <br>(from 31st
+                                                                                March the Career Point Delhi will be of
+                                                                                full
+                                                                                syllabus)
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Class X Moving to XI PCB <br>(Medical)
+                                                                            </td>
+                                                                            <td>Physics, Chemistry, Biology and MAT
+                                                                            </td>
+                                                                            <td>As per the Career Point Kota (Delhi)
+                                                                                paper <br>(from 31st
+                                                                                March the Career Point Delhi will be of
+                                                                                full
+                                                                                syllabus)
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Class X Moving to XI PCM<br>
+                                                                                (Engineering) </td>
+                                                                            <td>Physics, Chemistry, Math and MAT</td>
+                                                                            <td>As per the Career Point Kota (Delhi)
+                                                                                paper <br>(from 31st
+                                                                                March the Career Point Delhi will be of
+                                                                                full
+                                                                                syllabus)
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Class XI Moving to XII PCB <br>
+                                                                                (Medical) </td>
+                                                                            <td>Physics, Chemistry, Botany and Zoology
+                                                                            </td>
+                                                                            <td>As per the Career Point Kota (Delhi)
+                                                                                paper <br>(from 31st
+                                                                                March the Career Point Delhi will be of
+                                                                                full
+                                                                                syllabus)</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Class XI Moving to XII PCM <br>
+                                                                                (Engineering) </td>
+                                                                            <td>Physics, Chemistry and Math</td>
+                                                                            <td>As per the Career Point Kota (Delhi)
+                                                                                paper <br> (from 31st
+                                                                                March the Career Point Delhi will be of
+                                                                                full
+                                                                                syllabus)</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Class XII Moving to XII PASS PCB <br>
+                                                                                (Medical)</td>
+                                                                            <td>Physics, Chemistry, Botany and Zoology
+                                                                            </td>
+                                                                            <td>As per the Career Point Kota (Delhi)
+                                                                                paper<br> (from 31st
+                                                                                March the Career Point Kota will be of
+                                                                                full
+                                                                                syllabus)</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Class XII Moving to XII PASS PCM <br>
+                                                                                (Engineering)</td>
+                                                                            <td>Physics, Chemistry and Math</td>
+                                                                            <td>As per the Career Point Kota (Delhi)
+                                                                                paper<br> (from 31st
+                                                                                March the Career Point Kota will be of
+                                                                                full
+                                                                                syllabus)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end-table for -->
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div><!-- /.col-lg-8 -->
+                    <!-- /.col-lg-4 -->
+                </div>
+            </div>
+            <!-- end subject career -->
+        </div>
+        <!-- slider -->
+
+        <div class="container">
+            <div class="counter-heading">
+                <h2>Our fraternity</h2>
+            </div>
+
+            <div class="counter">
+                <div class="container">
+                    <div class="row">
+                        <div class="counter-wrapper">
+                            <div class="counter">
+                                <h1 class="count" data-target="600000"></h1>
+                                <p>Custmore</p>
+                            </div>
+                            <div class="counter">
+                                <h1 class="count" data-target="50000"></h1>
+                                <p>Custmore</p>
+                            </div>
+                            <div class="counter">
+                                <h1 class="count" data-target="600000"></h1>
+                                <p>Custmore</p>
+                            </div>
+                            <div class="counter">
+                                <h1 class="count" data-target="600000"></h1>
+                                <p>Custmore</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- slider-end -->
+    </header>
+
+
+    <!-- footer -->
+    <section class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+
+                    <div class="footer-copyright text-center text-white py-3">
+                        <div class="row">
+                            <div class="col-md-12 text-center footer-text">
+                                <p style="line-height:35px;margin-top:1em;"> Call Us<br><i
+                                        class="fa fa-phone text-theme-colored2 mr-1"></i>Admission Support : 9667225657
+                                    <br>
+                                    <i class="fa fa-phone text-theme-colored2 mr-1"></i>Toll free: 888-111-6033 /
+                                    888-111-6077 <br>
+                                    <i class="fa fa-envelope text-theme-colored2 mr-1"></i>info@careerpointdel.com
+                                </p>
+                                <p>© copyright 2024 Career Point Kota </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- footer-end -->
+
+
+
+    <!-- link script -->
+    <script src="js/main.js"></script>
+    <!-- end link script -->
+    <!-- body cdn bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- end bootstrap cdn body -->
+</body>
+
+</html>
